@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated>
+      <config projectName="LightControlPC" targetName="LightControlPC" />
+      <config projectName="LightControlPC" targetName="LightControlPC_autogen" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d821d9b9-03fa-46de-8e0c-949b31df487b" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="ProjectId" id="1miCNHu4XTWM7NxqfHTvbPbASkx" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/images" />
+    </key>
+  </component>
+  <component name="RunManager" selected="CMake Application.LightControlPC">
+    <configuration name="LightControlPC" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="LightControlPC" TARGET_NAME="LightControlPC" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="LightControlPC" RUN_TARGET_NAME="LightControlPC">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LightControlPC_autogen" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="LightControlPC" TARGET_NAME="LightControlPC_autogen" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="CMake Application.LightControlPC" />
+      <item itemvalue="CMake Application.LightControlPC_autogen" />
+    </list>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d821d9b9-03fa-46de-8e0c-949b31df487b" name="Default Changelist" comment="" />
+      <created>1609966983178</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1609966983178</updated>
+      <workItem from="1609966990316" duration="1794000" />
+      <workItem from="1609971076514" duration="1887000" />
+      <workItem from="1610196313911" duration="693000" />
+      <workItem from="1610653089506" duration="658000" />
+      <workItem from="1610653822246" duration="1121000" />
+      <workItem from="1611178412696" duration="2157000" />
+      <workItem from="1611339719512" duration="1053000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="421" y="227" width="513" height="359" key="#com.intellij.tools.ToolEditorDialog" timestamp="1609970547285">
+      <screen x="0" y="34" width="1366" height="734" />
+    </state>
+    <state x="421" y="227" width="513" height="359" key="#com.intellij.tools.ToolEditorDialog/0.34.1366.734@0.34.1366.734" timestamp="1609970547285" />
+    <state x="460" y="162" width="424" height="490" key="FileChooserDialogImpl" timestamp="1609970538669">
+      <screen x="0" y="34" width="1366" height="734" />
+    </state>
+    <state x="460" y="162" width="424" height="490" key="FileChooserDialogImpl/0.34.1366.734@0.34.1366.734" timestamp="1609970538669" />
+    <state width="1296" height="153" key="GridCell.Tab.0.bottom" timestamp="1611180569578">
+      <screen x="0" y="34" width="1366" height="734" />
+    </state>
+    <state width="1296" height="153" key="GridCell.Tab.0.bottom/0.34.1366.734@0.34.1366.734" timestamp="1611180569578" />
+    <state width="1296" height="153" key="GridCell.Tab.0.center" timestamp="1611180569577">
+      <screen x="0" y="34" width="1366" height="734" />
+    </state>
+    <state width="1296" height="153" key="GridCell.Tab.0.center/0.34.1366.734@0.34.1366.734" timestamp="1611180569577" />
+    <state width="1296" height="153" key="GridCell.Tab.0.left" timestamp="1611180569577">
+      <screen x="0" y="34" width="1366" height="734" />
+    </state>
+    <state width="1296" height="153" key="GridCell.Tab.0.left/0.34.1366.734@0.34.1366.734" timestamp="1611180569577" />
+    <state width="1296" height="153" key="GridCell.Tab.0.right" timestamp="1611180569578">
+      <screen x="0" y="34" width="1366" height="734" />
+    </state>
+    <state width="1296" height="153" key="GridCell.Tab.0.right/0.34.1366.734@0.34.1366.734" timestamp="1611180569578" />
+    <state x="164" y="34" width="1037" height="734" key="SettingsEditor" timestamp="1610197002269">
+      <screen x="0" y="34" width="1366" height="734" />
+    </state>
+    <state x="164" y="34" width="1037" height="734" key="SettingsEditor/0.34.1366.734@0.34.1366.734" timestamp="1610197002269" />
+    <state x="338" y="228" key="com.intellij.ide.util.TipDialog" timestamp="1609966992230">
+      <screen x="0" y="34" width="1366" height="734" />
+    </state>
+    <state x="338" y="228" key="com.intellij.ide.util.TipDialog/0.34.1366.734@0.34.1366.734" timestamp="1609966992230" />
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1610196354597">
+      <screen x="0" y="34" width="1366" height="734" />
+    </state>
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.34.1366.734@0.34.1366.734" timestamp="1610196354597" />
+  </component>
+</project>
