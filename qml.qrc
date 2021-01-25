@@ -1,5 +1,6 @@
 <RCC>
 <qresource>
     <file>resources/images/TestBackground.jpg</file>
+    <file>resources/stylesheets/LightControlPC.qss</file>
 </qresource>
 </RCC>

@@ -1,43 +1,38 @@
 #include <QtWidgets>
+#include <iostream>
 
 #include "MainWindow.h"
 
 MainWindow::MainWindow() {
     QWidget *widget;
-    QWidget *topFiller;
-    QWidget *bottomFiller;
     QVBoxLayout *layout;
 
     widget = new QWidget;
-    topFiller = new QWidget;
-    bottomFiller = new QWidget;
     layout = new QVBoxLayout;
 
     setCentralWidget(widget);
-    topFiller->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
 
-    infoLabel = new QLabel(tr("<i>Choose a menu option, or right-click to "
-                              "invoke a context menu</i>"));
-    infoLabel->setFrameStyle(QFrame::StyledPanel | QFrame::Sunken);
-    infoLabel->setAlignment(Qt::AlignCenter);
-
-
-    bottomFiller->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
-
-    layout->setContentsMargins(5, 5, 5, 5);
-    layout->addWidget(topFiller);
-    layout->addWidget(infoLabel);
-    layout->addWidget(bottomFiller);
+    layout->addWidget(createGroupBox());
+    layout->setContentsMargins(0, 5, 0, 5);
     widget->setLayout(layout);
-    createActions();
+
     createMenus();
+    createActions();
 
-    QString message = tr("A context menu is available by right-clicking");
-    statusBar()->showMessage(message);
+    menuBar()->setHidden(true);
 
-    setWindowTitle(tr("Menus"));
+    setWindowTitle(tr("LightControlPC"));
     setMinimumSize(160, 160);
     resize(480, 320);
+}
+
+void MainWindow::keyPressEvent(QKeyEvent *event) {
+    if(event->modifiers() & Qt::AltModifier) {
+        menuBar()->setHidden(!menuBar()->isHidden());
+        if(menuBar()->hasFocus()) {
+            std::cout << "focus" << std::endl;
+        }
+    }
 }
 
 void MainWindow::about() {
@@ -45,22 +40,46 @@ void MainWindow::about() {
 }
 
 void MainWindow::aboutQt() {
-    infoLabel->setText(tr("Invoked <b>Help|About Qt</b>"));
+    QMessageBox::aboutQt(this, tr("About Menu"));
 }
 
 void MainWindow::createMenus() {
-    helpMenu = menuBar()->addMenu(tr("&File"));
-    helpMenu->addAction(aboutAct);
-    helpMenu->addAction(aboutQtAct);
+    helpMenu = menuBar()->addMenu(tr("&Help"));
 }
 
 void MainWindow::createActions() {
-    helpMenu = menuBar()->addMenu(tr("&Help"));
-
     aboutAct = helpMenu->addAction(tr("&About"), this, &MainWindow::about);
     aboutQtAct = helpMenu->addAction(tr("&About Qt"), this, &MainWindow::aboutQt);
 
     helpMenu->setStatusTip(tr("Help Menu"));
     aboutAct->setStatusTip(tr("Show's the applications about box"));
     aboutQtAct->setStatusTip(tr("Show's the Qt about box"));
+}
+
+QGroupBox *MainWindow::createGroupBox() {
+    QGroupBox *tabButtons;
+    QHBoxLayout *tabLayout;
+
+    tabButtons = new QGroupBox();
+    tabLayout = new QHBoxLayout();
+    homeButton = new QRadioButton();
+    syncButton = new QRadioButton();
+    NZXTButton = new QRadioButton();
+    MSIButton = new QRadioButton();
+
+    homeButton->setText(tr("Home"));
+    syncButton->setText(tr("Sync"));
+    NZXTButton->setText(tr("NZXT"));
+    MSIButton->setText(tr("MSI"));
+
+    homeButton->setChecked(true);
+
+    tabLayout->addWidget(homeButton);
+    tabLayout->addWidget(syncButton);
+    tabLayout->addWidget(NZXTButton);
+    tabLayout->addWidget(MSIButton);
+    tabButtons->setLayout(tabLayout);
+    tabButtons->setFixedHeight(30);
+
+    return tabButtons;
 }

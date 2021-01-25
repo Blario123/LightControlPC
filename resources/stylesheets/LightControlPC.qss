@@ -1,0 +1,32 @@
+QGroupBox {
+        padding: 0px;
+}
+
+QRadioButton {
+    background: white;
+    border: 2px solid black;
+    border-bottom: 0px;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+    height: 20;
+}
+
+QRadioButton:checked {
+    background: gray;
+}
+
+QRadioButton:hover {
+    background: lightgray;
+}
+
+QRadioButton:hover:checked {
+    background: #999999;
+}
+
+QRadioButton::indicator {
+    width: 0px;
+    height: 0px;
+}
+
+QGroupBox {
+}

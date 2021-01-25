@@ -2,9 +2,11 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QGroupBox>
+#include <QRadioButton>
 
 QT_BEGIN_NAMESPACE
-class QAction;;
+class QAction;
 class QLabel;
 class QMenu;
 QT_END_NAMESPACE
@@ -27,7 +29,14 @@ private:
     QMenu *helpMenu{};
     QAction *aboutAct{};
     QAction *aboutQtAct{};
-    QLabel *infoLabel;
+
+    QGroupBox *createGroupBox();
+    QRadioButton *homeButton{};
+    QRadioButton *syncButton{};
+    QRadioButton *NZXTButton{};
+    QRadioButton *MSIButton{};
+
+    void keyPressEvent(QKeyEvent *event);
 };
 
 #endif

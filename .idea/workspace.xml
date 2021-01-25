@@ -12,7 +12,14 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d821d9b9-03fa-46de-8e0c-949b31df487b" name="Default Changelist" comment="" />
+    <list default="true" id="d821d9b9-03fa-46de-8e0c-949b31df487b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/stylesheets/LightControlPC.qss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LightControlPC.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/LightControlPC.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainWindow.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/MainWindow.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainWindow.h" beforeDir="false" afterPath="$PROJECT_DIR$/MainWindow.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/qml.qrc" beforeDir="false" afterPath="$PROJECT_DIR$/qml.qrc" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,6 +29,16 @@
     <option name="formatViaClangd" value="false" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1miCNHu4XTWM7NxqfHTvbPbASkx" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -31,7 +48,9 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Qt Style Sheet" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -78,6 +97,7 @@
       <workItem from="1610653822246" duration="1121000" />
       <workItem from="1611178412696" duration="2157000" />
       <workItem from="1611339719512" duration="1053000" />
+      <workItem from="1611588913747" duration="4971000" />
     </task>
     <servers />
   </component>
@@ -93,22 +113,26 @@
       <screen x="0" y="34" width="1366" height="734" />
     </state>
     <state x="460" y="162" width="424" height="490" key="FileChooserDialogImpl/0.34.1366.734@0.34.1366.734" timestamp="1609970538669" />
-    <state width="1296" height="153" key="GridCell.Tab.0.bottom" timestamp="1611180569578">
-      <screen x="0" y="34" width="1366" height="734" />
+    <state width="1316" height="164" key="GridCell.Tab.0.bottom" timestamp="1611604908005">
+      <screen x="0" y="35" width="1366" height="733" />
     </state>
     <state width="1296" height="153" key="GridCell.Tab.0.bottom/0.34.1366.734@0.34.1366.734" timestamp="1611180569578" />
-    <state width="1296" height="153" key="GridCell.Tab.0.center" timestamp="1611180569577">
-      <screen x="0" y="34" width="1366" height="734" />
+    <state width="1316" height="164" key="GridCell.Tab.0.bottom/0.35.1366.733@0.35.1366.733" timestamp="1611604908005" />
+    <state width="1316" height="164" key="GridCell.Tab.0.center" timestamp="1611604908005">
+      <screen x="0" y="35" width="1366" height="733" />
     </state>
     <state width="1296" height="153" key="GridCell.Tab.0.center/0.34.1366.734@0.34.1366.734" timestamp="1611180569577" />
-    <state width="1296" height="153" key="GridCell.Tab.0.left" timestamp="1611180569577">
-      <screen x="0" y="34" width="1366" height="734" />
+    <state width="1316" height="164" key="GridCell.Tab.0.center/0.35.1366.733@0.35.1366.733" timestamp="1611604908005" />
+    <state width="1316" height="164" key="GridCell.Tab.0.left" timestamp="1611604908005">
+      <screen x="0" y="35" width="1366" height="733" />
     </state>
     <state width="1296" height="153" key="GridCell.Tab.0.left/0.34.1366.734@0.34.1366.734" timestamp="1611180569577" />
-    <state width="1296" height="153" key="GridCell.Tab.0.right" timestamp="1611180569578">
-      <screen x="0" y="34" width="1366" height="734" />
+    <state width="1316" height="164" key="GridCell.Tab.0.left/0.35.1366.733@0.35.1366.733" timestamp="1611604908005" />
+    <state width="1316" height="164" key="GridCell.Tab.0.right" timestamp="1611604908005">
+      <screen x="0" y="35" width="1366" height="733" />
     </state>
     <state width="1296" height="153" key="GridCell.Tab.0.right/0.34.1366.734@0.34.1366.734" timestamp="1611180569578" />
+    <state width="1316" height="164" key="GridCell.Tab.0.right/0.35.1366.733@0.35.1366.733" timestamp="1611604908005" />
     <state x="164" y="34" width="1037" height="734" key="SettingsEditor" timestamp="1610197002269">
       <screen x="0" y="34" width="1366" height="734" />
     </state>
