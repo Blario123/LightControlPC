@@ -2,6 +2,7 @@
 #include <iostream>
 
 #include "MainWindow.h"
+#include "aboutMenu.h"
 
 MainWindow::MainWindow() {
     QWidget *widget;
@@ -35,21 +36,13 @@ void MainWindow::keyPressEvent(QKeyEvent *event) {
     }
 }
 
-void MainWindow::about() {
-    QMessageBox::about(this, tr("About Menu"), tr("The <b>Menu</b> example shows how to create ""menu-bar menus and context menus."));
-}
-
-void MainWindow::aboutQt() {
-    QMessageBox::aboutQt(this, tr("About Menu"));
-}
-
 void MainWindow::createMenus() {
     helpMenu = menuBar()->addMenu(tr("&Help"));
 }
 
 void MainWindow::createActions() {
-    aboutAct = helpMenu->addAction(tr("&About"), this, &MainWindow::about);
-    aboutQtAct = helpMenu->addAction(tr("&About Qt"), this, &MainWindow::aboutQt);
+    aboutAct = helpMenu->addAction(tr("&About"), this, aboutMenu::about());
+    aboutQtAct = helpMenu->addAction(tr("&About Qt"), this, aboutMenu::aboutQt());
 
     helpMenu->setStatusTip(tr("Help Menu"));
     aboutAct->setStatusTip(tr("Show's the applications about box"));
