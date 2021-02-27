@@ -13,12 +13,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d821d9b9-03fa-46de-8e0c-949b31df487b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/stylesheets/LightControlPC.qss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LightControlPC.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/LightControlPC.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MainWindow.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/MainWindow.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MainWindow.h" beforeDir="false" afterPath="$PROJECT_DIR$/MainWindow.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/qml.qrc" beforeDir="false" afterPath="$PROJECT_DIR$/qml.qrc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aboutMenu.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/aboutMenu.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aboutMenu.h" beforeDir="false" afterPath="$PROJECT_DIR$/aboutMenu.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/stylesheets/LightControlPC.qss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/stylesheets/LightControlPC.qss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +47,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Qt Style Sheet" />
@@ -61,6 +63,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/QtBridge" />
       <recent name="$PROJECT_DIR$/resources/images" />
     </key>
   </component>
@@ -80,6 +83,9 @@
       <item itemvalue="CMake Application.LightControlPC_autogen" />
     </list>
   </component>
+  <component name="ServiceViewManager">
+    <option name="showServicesTree" value="false" />
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -97,7 +103,16 @@
       <workItem from="1610653822246" duration="1121000" />
       <workItem from="1611178412696" duration="2157000" />
       <workItem from="1611339719512" duration="1053000" />
-      <workItem from="1611588913747" duration="4971000" />
+      <workItem from="1611588913747" duration="5200000" />
+      <workItem from="1611761789340" duration="1339000" />
+      <workItem from="1612111515239" duration="2972000" />
+      <workItem from="1612192947474" duration="1049000" />
+      <workItem from="1612380614324" duration="3590000" />
+      <workItem from="1612613483984" duration="344000" />
+      <workItem from="1612614266263" duration="88000" />
+      <workItem from="1613404417108" duration="402000" />
+      <workItem from="1614273128296" duration="1986000" />
+      <workItem from="1614359397762" duration="5467000" />
     </task>
     <servers />
   </component>
@@ -113,37 +128,47 @@
       <screen x="0" y="34" width="1366" height="734" />
     </state>
     <state x="460" y="162" width="424" height="490" key="FileChooserDialogImpl/0.34.1366.734@0.34.1366.734" timestamp="1609970538669" />
-    <state width="1316" height="164" key="GridCell.Tab.0.bottom" timestamp="1611604908005">
+    <state width="1316" height="162" key="GridCell.Tab.0.bottom" timestamp="1614429624825">
       <screen x="0" y="35" width="1366" height="733" />
     </state>
     <state width="1296" height="153" key="GridCell.Tab.0.bottom/0.34.1366.734@0.34.1366.734" timestamp="1611180569578" />
-    <state width="1316" height="164" key="GridCell.Tab.0.bottom/0.35.1366.733@0.35.1366.733" timestamp="1611604908005" />
-    <state width="1316" height="164" key="GridCell.Tab.0.center" timestamp="1611604908005">
+    <state width="1316" height="162" key="GridCell.Tab.0.bottom/0.35.1366.733@0.35.1366.733" timestamp="1614429624825" />
+    <state width="1316" height="162" key="GridCell.Tab.0.center" timestamp="1614429624824">
       <screen x="0" y="35" width="1366" height="733" />
     </state>
     <state width="1296" height="153" key="GridCell.Tab.0.center/0.34.1366.734@0.34.1366.734" timestamp="1611180569577" />
-    <state width="1316" height="164" key="GridCell.Tab.0.center/0.35.1366.733@0.35.1366.733" timestamp="1611604908005" />
-    <state width="1316" height="164" key="GridCell.Tab.0.left" timestamp="1611604908005">
+    <state width="1316" height="162" key="GridCell.Tab.0.center/0.35.1366.733@0.35.1366.733" timestamp="1614429624824" />
+    <state width="1316" height="162" key="GridCell.Tab.0.left" timestamp="1614429624823">
       <screen x="0" y="35" width="1366" height="733" />
     </state>
     <state width="1296" height="153" key="GridCell.Tab.0.left/0.34.1366.734@0.34.1366.734" timestamp="1611180569577" />
-    <state width="1316" height="164" key="GridCell.Tab.0.left/0.35.1366.733@0.35.1366.733" timestamp="1611604908005" />
-    <state width="1316" height="164" key="GridCell.Tab.0.right" timestamp="1611604908005">
+    <state width="1316" height="162" key="GridCell.Tab.0.left/0.35.1366.733@0.35.1366.733" timestamp="1614429624823" />
+    <state width="1316" height="162" key="GridCell.Tab.0.right" timestamp="1614429624824">
       <screen x="0" y="35" width="1366" height="733" />
     </state>
     <state width="1296" height="153" key="GridCell.Tab.0.right/0.34.1366.734@0.34.1366.734" timestamp="1611180569578" />
-    <state width="1316" height="164" key="GridCell.Tab.0.right/0.35.1366.733@0.35.1366.733" timestamp="1611604908005" />
-    <state x="164" y="34" width="1037" height="734" key="SettingsEditor" timestamp="1610197002269">
-      <screen x="0" y="34" width="1366" height="734" />
+    <state width="1316" height="162" key="GridCell.Tab.0.right/0.35.1366.733@0.35.1366.733" timestamp="1614429624824" />
+    <state x="164" y="35" width="1037" height="734" key="SettingsEditor" timestamp="1612614351426">
+      <screen x="0" y="35" width="1366" height="733" />
     </state>
     <state x="164" y="34" width="1037" height="734" key="SettingsEditor/0.34.1366.734@0.34.1366.734" timestamp="1610197002269" />
+    <state x="164" y="35" key="SettingsEditor/0.35.1366.733@0.35.1366.733" timestamp="1612614351425" />
     <state x="338" y="228" key="com.intellij.ide.util.TipDialog" timestamp="1609966992230">
       <screen x="0" y="34" width="1366" height="734" />
     </state>
     <state x="338" y="228" key="com.intellij.ide.util.TipDialog/0.34.1366.734@0.34.1366.734" timestamp="1609966992230" />
-    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1610196354597">
-      <screen x="0" y="34" width="1366" height="734" />
+    <state x="422" y="272" width="712" height="311" key="org.intellij.images.editor.actions.BackgroundImageDialog" timestamp="1612614285284">
+      <screen x="0" y="35" width="1366" height="733" />
+    </state>
+    <state x="422" y="272" width="712" height="311" key="org.intellij.images.editor.actions.BackgroundImageDialog/0.35.1366.733@0.35.1366.733" timestamp="1612614285284" />
+    <state x="427" y="40" width="501" height="728" key="refactoring.ChangeSignatureDialog" timestamp="1614363136567">
+      <screen x="0" y="35" width="1366" height="733" />
+    </state>
+    <state x="427" y="40" width="501" height="728" key="refactoring.ChangeSignatureDialog/0.35.1366.733@0.35.1366.733" timestamp="1614363136567" />
+    <state x="346" y="90" width="672" height="678" key="search.everywhere.popup" timestamp="1612382845024">
+      <screen x="0" y="35" width="1366" height="733" />
     </state>
     <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.34.1366.734@0.34.1366.734" timestamp="1610196354597" />
+    <state x="346" y="90" width="672" height="678" key="search.everywhere.popup/0.35.1366.733@0.35.1366.733" timestamp="1612382845024" />
   </component>
 </project>

@@ -14,7 +14,7 @@ find_package(Qt5Core REQUIRED)
 find_package(Qt5Widgets REQUIRED)
 find_package(Qt5Quick REQUIRED)
 
-add_executable(LightControlPC MainWindow.cpp MainWindow.h qml.qrc LightControlPC.cpp)
+add_executable(LightControlPC MainWindow.cpp aboutMenu.cpp aboutMenu.h MainWindow.h qml.qrc LightControlPC.cpp)
 
 target_link_libraries(LightControlPC Qt5::Core)
 target_link_libraries(LightControlPC Qt5::Widgets)

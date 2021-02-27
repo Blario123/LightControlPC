@@ -1,12 +1,13 @@
 #include <QtWidgets>
-#include <iostream>
+#include <QMessageBox>
 
 #include "aboutMenu.h"
+#include "MainWindow.h"
 
-void aboutMenu::about() {
-    QMessageBox::about(this, tr("About"), tr("The <b>About</b> Menu and Message box"));
+void AboutMenu::AboutMenu::aboutQt(){
+    QMessageBox::aboutQt(MainWindow().parentWidget(), QMessageBox::tr("About Qt"));
 }
 
-void aboutMenu::aboutQt() {
-    QMessageBox:: aboutQt(this, tr("About Qt"));
+void AboutMenu::AboutMenu::about(){
+    QMessageBox::about(MainWindow().parentWidget(), QMessageBox::tr("About"), QMessageBox::tr("The <b>About</b> Menu and Message box"));
 }

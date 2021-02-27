@@ -2,77 +2,77 @@
 #include <iostream>
 
 #include "MainWindow.h"
-#include "aboutMenu.h"
 
 MainWindow::MainWindow() {
-    QWidget *widget;
-    QVBoxLayout *layout;
+    instantiateTypes();
 
-    widget = new QWidget;
-    layout = new QVBoxLayout;
+    setCentralWidget(MainWidget);
 
-    setCentralWidget(widget);
+    syncLayout->addWidget(syncPageText);
+    syncLayout->setContentsMargins(0, 0, 0, 0);
+    syncPage->setLayout(syncLayout);
+    NZXTLayout->addWidget(NZXTPageText);
+    NZXTLayout->setContentsMargins(0, 0, 0, 0);
+    NZXTPage->setLayout(NZXTLayout);
+    MysticLayout->addWidget(MysticPageText);
+    MysticLayout->setContentsMargins(0, 0, 0, 0);
+    MysticPage->setLayout(MysticLayout);
+    settingsLayout->addWidget(settingsPageText);
+    settingsLayout->setContentsMargins(0, 0, 0, 0);
+    settingsPage->setLayout(settingsLayout);
 
-    layout->addWidget(createGroupBox());
-    layout->setContentsMargins(0, 5, 0, 5);
-    widget->setLayout(layout);
 
-    createMenus();
+    buttonLayout->addWidget(syncButton);
+    buttonLayout->addWidget(NZXTButton);
+    buttonLayout->addWidget(MysticButton);
+    buttonLayout->addWidget(settingsButton);
+    buttonLayout->setContentsMargins(0, 0, 0, 0);
+    LCPPages->addWidget(syncPage);
+    LCPPages->addWidget(NZXTPage);
+    LCPPages->addWidget(MysticPage);
+    LCPPages->addWidget(settingsPage);
+    LCPPages->setCurrentIndex(0);
+
+    groupBox->setLayout(buttonLayout);
+
+    layout->addWidget(groupBox);
+    layout->addWidget(LCPPages);
+
+    layout->setContentsMargins(0, 0, 0, 0);
+    MainWidget->setLayout(layout);
+
     createActions();
 
-    menuBar()->setHidden(true);
-
+    setAttribute(Qt::WA_TranslucentBackground);
     setWindowTitle(tr("LightControlPC"));
     setMinimumSize(160, 160);
     resize(480, 320);
 }
 
-void MainWindow::keyPressEvent(QKeyEvent *event) {
-    if(event->modifiers() & Qt::AltModifier) {
-        menuBar()->setHidden(!menuBar()->isHidden());
-        if(menuBar()->hasFocus()) {
-            std::cout << "focus" << std::endl;
-        }
-    }
-}
-
-void MainWindow::createMenus() {
-    helpMenu = menuBar()->addMenu(tr("&Help"));
+void MainWindow::instantiateTypes() {
+    LCPPages = new QStackedWidget();
+    syncPage = new QWidget();
+    NZXTPage = new QWidget();
+    MysticPage = new QWidget();
+    settingsPage = new QWidget();
+    syncButton = new QRadioButton("Sync");
+    NZXTButton = new QRadioButton("NZXT");
+    MysticButton = new QRadioButton("Mystic");
+    settingsButton = new QRadioButton("Settings");
+    MainWidget = new QWidget;
+    layout = new QVBoxLayout;
+    groupBox = new QGroupBox;
+    buttonLayout = new QHBoxLayout;
+    syncLayout = new QGridLayout;
+    NZXTLayout = new QGridLayout;
+    MysticLayout = new QGridLayout;
+    settingsLayout = new QGridLayout;
+    syncPageText = new QLabel("Sync");
+    NZXTPageText = new QLabel("NZXT");
+    MysticPageText = new QLabel("Mystic");
+    settingsPageText = new QLabel("Settings");
 }
 
 void MainWindow::createActions() {
-    aboutAct = helpMenu->addAction(tr("&About"), this, aboutMenu::about());
-    aboutQtAct = helpMenu->addAction(tr("&About Qt"), this, aboutMenu::aboutQt());
 
-    helpMenu->setStatusTip(tr("Help Menu"));
-    aboutAct->setStatusTip(tr("Show's the applications about box"));
-    aboutQtAct->setStatusTip(tr("Show's the Qt about box"));
-}
-
-QGroupBox *MainWindow::createGroupBox() {
-    QGroupBox *tabButtons;
-    QHBoxLayout *tabLayout;
-
-    tabButtons = new QGroupBox();
-    tabLayout = new QHBoxLayout();
-    homeButton = new QRadioButton();
-    syncButton = new QRadioButton();
-    NZXTButton = new QRadioButton();
-    MSIButton = new QRadioButton();
-
-    homeButton->setText(tr("Home"));
-    syncButton->setText(tr("Sync"));
-    NZXTButton->setText(tr("NZXT"));
-    MSIButton->setText(tr("MSI"));
-
-    homeButton->setChecked(true);
-
-    tabLayout->addWidget(homeButton);
-    tabLayout->addWidget(syncButton);
-    tabLayout->addWidget(NZXTButton);
-    tabLayout->addWidget(MSIButton);
-    tabButtons->setLayout(tabLayout);
-    tabButtons->setFixedHeight(30);
-
-    return tabButtons;
 }

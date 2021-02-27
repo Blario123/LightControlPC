@@ -1,10 +1,13 @@
 #ifndef ABOUTMENU_H
 #define ABOUTMENU_H
 
-class aboutMenu {
-    Q_OBJECT
-    private slots:
-        void about();
-        void aboutQt();
-};
+#include <QMessageBox>
+
+namespace AboutMenu {
+    class AboutMenu {
+    public slots:
+        static void aboutQt();
+        static void about();
+    };
+}
 #endif

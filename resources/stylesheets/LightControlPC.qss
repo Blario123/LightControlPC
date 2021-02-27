@@ -1,9 +1,14 @@
+QWidget {
+    background: rgba(0, 0, 0, 0.5);
+}
+
 QGroupBox {
-        padding: 0px;
+    padding: 0px;
 }
 
 QRadioButton {
     background: white;
+    padding: 0px;
     border: 2px solid black;
     border-bottom: 0px;
     border-top-right-radius: 4px;
@@ -26,7 +31,4 @@ QRadioButton:hover:checked {
 QRadioButton::indicator {
     width: 0px;
     height: 0px;
-}
-
-QGroupBox {
 }
