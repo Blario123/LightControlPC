@@ -5,22 +5,27 @@
 
 MainWindow::MainWindow() {
     instantiateTypes();
-
     setCentralWidget(MainWidget);
 
     syncLayout->addWidget(syncPageText);
     syncLayout->setContentsMargins(0, 0, 0, 0);
     syncPage->setLayout(syncLayout);
+    syncPage->setObjectName("syncPage");
+
     NZXTLayout->addWidget(NZXTPageText);
     NZXTLayout->setContentsMargins(0, 0, 0, 0);
     NZXTPage->setLayout(NZXTLayout);
+    NZXTPage->setObjectName("NZXTPage");
+
     MysticLayout->addWidget(MysticPageText);
     MysticLayout->setContentsMargins(0, 0, 0, 0);
     MysticPage->setLayout(MysticLayout);
+    MysticPage->setObjectName("MysticPage");
+
     settingsLayout->addWidget(settingsPageText);
     settingsLayout->setContentsMargins(0, 0, 0, 0);
     settingsPage->setLayout(settingsLayout);
-
+    settingsPage->setObjectName("settingsPage");
 
     buttonLayout->addWidget(syncButton);
     buttonLayout->addWidget(NZXTButton);
@@ -31,6 +36,9 @@ MainWindow::MainWindow() {
     LCPPages->addWidget(NZXTPage);
     LCPPages->addWidget(MysticPage);
     LCPPages->addWidget(settingsPage);
+    LCPPages->setTabOrder(syncPage, NZXTPage);
+    LCPPages->setTabOrder(NZXTPage, MysticPage);
+    LCPPages->setTabOrder(MysticPage, settingsPage);
     LCPPages->setCurrentIndex(0);
 
     groupBox->setLayout(buttonLayout);
@@ -45,7 +53,7 @@ MainWindow::MainWindow() {
 
     setAttribute(Qt::WA_TranslucentBackground);
     setWindowTitle(tr("LightControlPC"));
-    setMinimumSize(160, 160);
+    setMinimumSize(480, 320);
     resize(480, 320);
 }
 

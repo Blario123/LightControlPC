@@ -1,6 +1,6 @@
 QWidget {
     background: rgba(0, 0, 0, 0.5);
-}
+}s
 
 QGroupBox {
     padding: 0px;
